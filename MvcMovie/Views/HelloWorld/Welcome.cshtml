@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "Welcome";
+}
+
+<h1>Welcome</h1>
+
+<ul>
+    @{
+        int times = int.Parse(ViewData["times"].ToString());
+
+        for (var i = 0; i < times; i++)
+        {
+            <li> @ViewData["Message"] </li>
+        }
+    }
+
+</ul>
+
